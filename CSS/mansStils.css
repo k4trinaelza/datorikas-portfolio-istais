@@ -1,0 +1,42 @@
+
+ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+body {
+    background-image: url('../Images/Fons.jpg'); /* Change the path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+.w3-dropdown-content {
+    display: none; /* Hide dropdown by default */
+    width: auto; /* Ensure the dropdown width is exactly the same as the button */
+    min-width: 100%; /* Prevent dropdown from shrinking */
+}
+
+/* Offset scroll for each section */
+#tema1, #tema2, #tema3, #tema4, #tema5 {
+    scroll-margin-top: 80px; /* Adjust this value as needed */
+}
+
+/* Mobile dropdown specific styles */
+.w3-dropdown-content {
+    display: none; /* Hide dropdown by default */
+}
+
+/* Ensure the dropdown is hidden until clicked */
+.w3-dropdown .w3-dropdown-content {
+    display: none;
+}
+
+.w3-text-grey {
+    color: grey !important; /* Ensures all grey text follows this rule */
+}
